@@ -480,7 +480,7 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
   color: #ffffff;
 }
 #hclient {
-  background-image: url(/img/work/background.jpg);
+  background-image: url(img/work/background.jpg);
 }
 #hclient .row h3 {
   font-family: "Montserrat-Regular";
@@ -543,7 +543,7 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
   margin-right: 10px;
 }
 .map {
-  background-image: url(/img/work/background.jpg);
+  background-image: url(img/work/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
