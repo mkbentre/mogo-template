@@ -1,0 +1,119 @@
+header .navbar-light .navbar-brand {
+  font-size: 30px;
+  color: white;
+}
+header .navbar-light .navbar-brand:hover {
+  color: white;
+}
+header .navbar-light .navbar-nav .nav-link {
+  color: white;
+  line-height: 15px;
+  position: relative;
+}
+header .navbar-light .navbar-nav .nav-item {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 37px;
+  padding-top: 37px;
+}
+header .navbar-light .navbar-nav .nav-link::before {
+  content: "";
+  width: 0;
+  bottom: -8px;
+  border-top: 3px solid #fce38a;
+  position: absolute;
+  transition: .3s;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .navbar-light .navbar-nav .nav-link:hover::before,
+header .navbar-light .navbar-nav .nav-link.active::before{
+	width: calc(100% - 1rem);
+}
+header .navbar-light .navbar-nav .nav-link:hover,
+header .navbar-light .navbar-nav .nav-link .active  {
+	color: #fce38a;
+}
+header .navbar-light button {
+  margin-left: auto;
+}
+header .navbar-light button:focus {
+  outline: none;
+}
+header .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .home-slide {
+  padding-top: 122px;
+  margin: auto;
+}
+header .home-slide .template {
+  font-family: "Kaushan Script";
+  font-size: 72px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+header .home-slide .slogan {
+  font-family: "Montserrat-Bold";
+  font-size: 5.5rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 34px;
+  line-height: 1em;
+}
+header .home-slide hr {
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+header .home-slide .learn-more {
+  border: 3px solid white;
+  padding: 13px 30px;
+  font-size: 14px;
+  line-height: 1em;
+  color: white;
+  margin-bottom: 155px;
+  background-color: rgba(0,0,0,0);
+}
+header .home-slide .carousel-indicators {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  
+}
+header .home-slide .carousel-indicators .carousel-box {
+  border-top:2px solid #fff;
+  color:#fff;
+  cursor: pointer;
+  line-height: 24px;
+  text-align: left;
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+header .home-slide .carousel-indicators .carousel-box span {
+  font-size: 24px;
+  margin-right: 5px;
+  font-family: "Montserrat-Bold";
+}
+header .home-slide .carousel-indicators .carousel-box::before {
+  content: "";
+  width: 0;
+  border-top: 2px solid red;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+}
+header .home-slide .carousel-indicators .active .carousel-box::before,
+header .home-slide .carousel-indicators .carousel-box:hover::before {
+  width: 100px;
+}
