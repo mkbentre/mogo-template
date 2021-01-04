@@ -43,6 +43,11 @@
   font-family: Montserrat-BoldItalic;
   src: url(../vendor/fonts/Montserrat/Montserrat-BoldItalic.ttf);
 }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto-Regular";
   font-size: 15px;
@@ -85,7 +90,9 @@ a:hover {
 header .navbar-light .navbar-brand {
   font-size: 30px;
   color: white;
+  padding-top: 30px;
 }
+
 header .navbar-light .navbar-brand:hover {
   color: white;
 }
@@ -97,9 +104,16 @@ header .navbar-light .navbar-nav .nav-link {
 header .navbar-light .navbar-nav .nav-item {
   margin-left: 25px;
   margin-right: 25px;
-  padding-top: 37px;
+}
+
+header .navbar-light .navbar-nav {
   padding-top: 37px;
 }
+
+header .navbar-light .pd-tg {
+  padding-top: 0px;
+}
+
 header .navbar-light .navbar-nav .nav-link::before {
   content: "";
   width: 0;
@@ -128,6 +142,24 @@ header .navbar-light button:focus {
 header .navbar {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.menu {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header .fixed-menu {
+	position: fixed;
+	top:0;
+  left:0;
+  right: 0;
+	width:100vw;
+	z-index: 1;
+	background-color: rgba(243,129,129,0.9);
+	animation: mymove 3s;
+  animation-fill-mode: forwards;
+  max-width: unset;
 }
 
 header .home-slide {
@@ -375,6 +407,74 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
 
 .what-we-do .row img {
   width: 100%;
+}
+
+.accordion .card {
+  margin-bottom: 20px;
+}
+
+.accordion .card-header {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  color: #333333;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.accordion .card-header span {
+  margin-left: 16px;
+}
+
+.accordion .collapsed .card-header::after{
+  content: "";
+  background-image: url(../img/icon/arrow-down.png);
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 22px;
+  height: 12px;
+  background-repeat: no-repeat;
+}
+
+.accordion .card-header::after{
+  content: "";
+  background-image: url(../img/icon/arrow-up.png);
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 22px;
+  height: 12px;
+  background-repeat: no-repeat;
+}
+
+.accordion .card-body{
+  height: 155px;
+  overflow-y: scroll;
+  font-family: "Roboto-LightItalic";
+  font-size: 15px;
+  color: #999999;
+}
+
+.accordion .card-body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #fff;
+}
+
+.accordion .card-body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.accordion .card-body::-webkit-scrollbar-thumb {
+  background-color:  #26a7ce;
+}
+
+.accordion .card img {
+  width: 1.8em;
+}
+
+.accordion .card .card-header {
+  
 }
 
 .quote {
@@ -755,7 +855,6 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
   }
 
   .social {
-    margin-left: 30px;
   }
 
   /* .social .row>div {

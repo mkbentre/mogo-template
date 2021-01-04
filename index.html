@@ -18,10 +18,10 @@
   <script src="js/script.js"></script>
 </head>
 
-<body>
-  <header class="home">
+<body data-spy="scroll" data-target=".mogo-menu" data-offset="1">
+  <header  id="home" class="home">
     <!-- Navigation -->
-    <div class="container-xl text-center">
+    <div class="menu container-xl text-center">
       <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -33,22 +33,22 @@
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">HOME</a>
+                <a class="nav-link" href="#home">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="#about">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVICE</a>
+                <a class="nav-link" href="#service">SERVICE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">WORK</a>
+                <a class="nav-link" href="#work">WORK</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
+                <a class="nav-link" href="#blog">BLOG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="#contact">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -319,14 +319,51 @@
                 </p>
               </div>
               <div class="row">
-                <div class="col-xl-6">
+                <div class="col-lg-6">
                   <img src="img/service/item.jpg" alt="" />
                 </div>
-                <div class="col-xl-6">
-                  <div>
-                    <div class="card-rd text-left"></div>
-                    <div class="card-rd text-left"></div>
-                    <div class="card-rd text-left"></div>
+                <div class="col-lg-6">
+                  <div class="accordion" id="accordionExample"> 
+                    <div class="card text-left">
+                      <a href="#photography" class="collapsed"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <div class="card-header" id="headingOne">
+                              <img src="img/icon/picture.png" alt="">
+                              <span>photography</span>
+                      </div>
+                      </a>
+
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card text-left">
+                      <a href="#creativity" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="card-header" id="headingTwo">
+                            <img src="img/icon/equalizer.png" alt="">
+                            <span>creativity</span>
+                      </div>
+                    </a>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card text-left">
+                      <a href="#web design" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="card-header" id="headingThree">
+                            <img src="img/icon/bullseye.png" alt="">
+                            <span>web design</span>
+                      </div>
+                    </a>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -801,7 +838,7 @@
         </div>
   </section>
 
-  <footer>
+  <footer id="contact">
     <div class="map">
       <a href="#">
         <img src="img/icon/location.png" alt="" />
@@ -809,6 +846,7 @@
         <hr class="h-line" />
       </a>
     </div>
+    
     <div class="social container-xl">
       <div class="row">
         <div class="col-md-12 col-lg-5 subcribe">
