@@ -23,6 +23,20 @@ $(function() {
         }
     });
 
+    	//Hiệu ứng smoothly
+	$(".back-to-top").click(function(event) {
+		/* Act on the event */
+		//Về home và có hiệu chậm chậm
+		$("html").animate(
+		{
+			scrollTop: 0
+		},
+		2000
+		);
+
+	});
+
+
     // click trên menu sẽ di chuyển đến id tương ứng
     $('header .menu ul li a').on('click', function(e) {
         e.preventDefault();
@@ -66,4 +80,14 @@ $(window).scroll(function() {
         $("header .navbar-light .navbar-nav").removeClass('pd-tg');
         $("header .navbar .navbar-brand").removeClass('pt-0');
     }
+
+    	// Back to top ẩn/hiện
+	if ($(this).scrollTop()) { 
+        //chưa phải ở top
+        $(".back-to-top").fadeIn();
+   } 
+    else { 
+        //đã ở top
+        $(".back-to-top").fadeOut(); 
+   } 
 })

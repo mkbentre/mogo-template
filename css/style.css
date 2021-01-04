@@ -84,9 +84,6 @@ a:hover {
   margin-top: 30px;
 }
 
-.home a:visited {
-  color: white !important;
-}
 header .navbar-light .navbar-brand {
   font-size: 30px;
   color: white;
@@ -97,7 +94,6 @@ header .navbar-light .navbar-brand:hover {
   color: white;
 }
 header .navbar-light .navbar-nav .nav-link {
-  color: white;
   line-height: 15px;
   position: relative;
 }
@@ -119,7 +115,7 @@ header .navbar-light .pd-tg {
 header .navbar-light .navbar-nav .nav-link::before {
   content: "";
   width: 0;
-  bottom: -8px;
+  bottom: 0px;
   border-top: 3px solid #fce38a;
   position: absolute;
   transition: .3s;
@@ -131,10 +127,18 @@ header .navbar-light .navbar-nav .nav-link:hover::before,
 header .navbar-light .navbar-nav .nav-link.active::before{
 	width: calc(100% - 1rem);
 }
+
+header .navbar-light .navbar-nav .nav-link:link,
+header .navbar-light .navbar-nav .nav-link:visited {
+  color: #fff;
+}
+
 header .navbar-light .navbar-nav .nav-link:hover,
-header .navbar-light .navbar-nav .nav-link .active  {
+header .navbar-light .navbar-nav .nav-link.active  {
 	color: #fce38a;
 }
+
+
 header .navbar-light button {
   margin-left: auto;
 }
@@ -884,6 +888,18 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
 .what-we-do .row .mgb3 {
   padding-bottom: 45px;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-color: #f38181;
+  outline: none;
+}
+
 @media only screen and (min-width: 768px) {
   header .home-slide .template {
     font-size: 3.6rem;
