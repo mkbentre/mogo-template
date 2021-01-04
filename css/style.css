@@ -1,12 +1,12 @@
 /*----------KaushanScript----------*/
 @font-face {
-  font-family: KaushanScript-Regular;
+  font-family: "KaushanScript-Regular";
   src: url(../vendor/fonts/Kaushan_Script/KaushanScript-Regular.ttf);
 }
 
 /*----------Roboto----------*/
 @font-face {
-  font-family: Roboto-Regular;
+  font-family: "Roboto-Regular";
   src: url(../vendor/fonts/Roboto/Roboto-Regular.ttf);
 }
 @font-face {
@@ -104,6 +104,8 @@ header .navbar-light .navbar-nav .nav-link {
 header .navbar-light .navbar-nav .nav-item {
   margin-left: 25px;
   margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 header .navbar-light .navbar-nav {
@@ -167,15 +169,15 @@ header .home-slide {
   margin: auto;
 }
 header .home-slide .template {
-  font-family: "Kaushan Script";
-  font-size: 72px;
+  font-family: "KaushanScript-Regular";
+  font-size: 2rem;  /* 4.5rem */
   color: white;
   margin-top: 0;
   margin-bottom: 22px;
 }
 header .home-slide .slogan {
   font-family: "Montserrat-Bold";
-  font-size: 5.5rem;
+  font-size: 3rem; /* 5.5rem */
   color: white;
   text-transform: uppercase;
   margin-top: 0;
@@ -341,7 +343,7 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
   border-right: 1px solid #b5eae0;
 }
 .achievements .row .ach-number {
-  padding-top: 79px;
+  padding-top: 20px;
   color: white;
   font-size: 72px;
   font-family: "Montserrat-Bold";
@@ -353,7 +355,7 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
   color: white;
   font-size: 14px;
   font-family: "Montserrat-Regular";
-  margin-bottom: 86px;
+  margin-bottom: 20px;
   display: inline-block;
   text-transform: uppercase;
 }
@@ -487,6 +489,11 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
   margin-left: auto;
   max-width: 980px;
 }
+
+.quote .item img {
+  width: 100%;
+}
+
 .quote .content {
   font-family: "Roboto-Italic";
   font-size: 24px;
@@ -557,6 +564,13 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
 .work .row div img {
   width: 100%;
 }
+
+.work .row>div {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+
 .hover-active {
   display: block;
   height: 50%;
@@ -610,6 +624,8 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
 }
 #hclient {
   background-image: url(../img/work/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #hclient .row h3 {
   font-family: "Montserrat-Regular";
@@ -642,7 +658,7 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
 .calendar {
   background-color: #95e1d3;
   position: absolute;
-  top: 160px;
+  top: 110px;
   left: 2px;
   padding: 2px 15px;
 }
@@ -674,6 +690,9 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
   margin-right: 10px;
 }
 
+.blog .row img.blog-ava {
+  width: 100%;
+}
 
 .map {
   background-image: url(../img/work/background.jpg);
@@ -822,6 +841,8 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
   color: red;
 }
 
+
+
 .instagram .row img {
   width: 100%;
 }
@@ -854,16 +875,50 @@ header .home-slide .carousel-indicators .carousel-box:hover::before {
     margin-bottom: 10px;
   }
 
-  .social {
-  }
-
-  /* .social .row>div {
-    margin-bottom: 35px;
-  } */
-
   .footer__title--blog,
   .footer__title--instagram {
     margin-bottom: 20px;
   }
  
 }
+.what-we-do .row .mgb3 {
+  padding-bottom: 45px;
+}
+@media only screen and (min-width: 768px) {
+  header .home-slide .template {
+    font-size: 3.6rem;
+  }
+
+  header .home-slide .slogan {
+    font-size: 5.5rem;
+  }
+  
+}
+
+@media only screen and (min-width: 992px) {
+  header .home-slide .template {
+    font-size: 4.5rem;
+  }
+
+  header .home-slide .slogan {
+    font-size: 8rem;
+  }
+
+  header .navbar-light .navbar-nav .nav-item {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .achievements .row .ach-number {
+    padding-top: 79px;
+  }
+  .achievements .row .ach-title {
+    margin-bottom: 86px;
+  }
+
+  .work .row>div {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
